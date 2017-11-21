@@ -1,118 +1,93 @@
-	@font-face {
-			font-family: "PTSansRegular";
-			src: url("./fonts/PTSansRegular/PTSansRegular.eot");
-			src: url("./fonts/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
-			url("./fonts/PTSansRegular/PTSansRegular.woff") format("woff"),
-			url("./fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
+@charset "UTF-8";
+@font-face {
+  font-family: "PTSansRegular";
+  src: url("./fonts/PTSansRegular/PTSansRegular.eot");
+  src: url("./fonts/PTSansRegular/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("./fonts/PTSansRegular/PTSansRegular.woff") format("woff"), url("./fonts/PTSansRegular/PTSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-	@font-face {
-			font-family: "PTSansBold";
-			src: url("./fonts/PTSansBold/PTSansBold.eot");
-			src: url("./fonts/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
-			url("./fonts/PTSansBold/PTSansBold.woff") format("woff"),
-			url("./fonts/PTSansBold/PTSansBold.ttf") format("truetype");
-			font-style: normal;
-			font-weight: normal;
-	}
+@font-face {
+  font-family: "PTSansBold";
+  src: url("./fonts/PTSansBold/PTSansBold.eot");
+  src: url("./fonts/PTSansBold/PTSansBold.eot?#iefix") format("embedded-opentype"), url("./fonts/PTSansBold/PTSansBold.woff") format("woff"), url("./fonts/PTSansBold/PTSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
 
-
-body{
-
-		font-family: "PTSansBold";
-		font-size:15px;
-		
-		/* временно ставим нашу картинку на фон чтоб видеть на сколько мы близки к ней */
-			background-image: url(./anketa.jpg);
-	background-position: 50% 0;
-	height: 4000px;
-
-}
+body {
+  font-family: "PTSansBold";
+  font-size: 15px;
+  /* временно ставим нашу картинку на фон чтоб видеть на сколько мы близки к ней */
+  background-image: url(./anketa.jpg);
+  background-position: 50% 0;
+  height: 4000px; }
 
 .contact-info {
-    padding: 49px 0 0 0;
-    font-size: 22px;
-    line-height: 54px;
-}
+  padding: 49px 0 0 0;
+  font-size: 22px;
+  line-height: 54px; }
 
-.contact-info__container{
-	
-	 display: flex;
-	 justify-content:space-between;
-}
+.contact-info__container {
+  display: flex;
+  justify-content: space-between; }
 
 .contact-info input {
-    width: 100%;
-    background-color: transparent;
-    font-size: 25px;
-}
+  width: 100%;
+  background-color: transparent;
+  font-size: 25px; }
 
-.container2{
-	flex-wrap: wrap;
-	 display: flex;
-}
+.container2 {
+  flex-wrap: wrap;
+  display: flex; }
 
-.about-checkbox{
-	/*padding:60px;*/
-}
+.about-checkbox {
+  /*padding:60px;*/ }
 
 .contact-info__input {
-    padding: 5px;
-    width: 100%;
-    margin: -2px 0 0 0;
-}
+  padding: 5px;
+  width: 100%;
+  margin: -2px 0 0 0; }
 
-.contact-info__lable{
-	white-space: nowrap;
-}
+.contact-info__lable {
+  white-space: nowrap; }
 
-.red-box{
-  width:100%;
-  background-color:red;
-}
+.red-box {
+  width: 100%;
+  background-color: red; }
 
-.yellow-box{
-  background-color:yellow;
-}
-.fl{
-  float:left;
-}
-.width-keeper{
-	max-width:1000px;
-	margin:auto;
-	padding:0 50px;
-}
+.yellow-box {
+  background-color: yellow; }
 
-.width-keeper-top{
-	max-width:913px;
-	margin:auto;
-	padding:0 0px;
-}
+.fl {
+  float: left; }
 
-.zapolneno{
-	display:flex;
-	justify-content:  flex-end;
+.width-keeper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 50px; }
 
-	padding: 37px 0 0 0;
-}
-.zapolneno__pick{
-	width:272px;
-	height:111px;
-	background-image: url(./sekretno.png);
-	background-position: 50% 50%;
-}
+.width-keeper-top {
+  max-width: 913px;
+  margin: auto;
+  padding: 0 0px; }
 
+.zapolneno {
+  display: flex;
+  justify-content: flex-end;
+  padding: 37px 0 0 0; }
 
-.delo{
-	display:flex;
-	justify-content: center;
-	padding: 0px 33px 0 0;
-}
-.delo__pick{
-	width:230px;
-	height:119px;
-	background-image: url(./delo.png);
-	background-position: 50% 50%;
-}
+.zapolneno__pick {
+  width: 272px;
+  height: 111px;
+  background-image: url(./sekretno.png);
+  background-position: 50% 50%; }
+
+.delo {
+  display: flex;
+  justify-content: center;
+  padding: 0px 33px 0 0; }
+
+.delo__pick {
+  width: 230px;
+  height: 119px;
+  background-image: url(./delo.png);
+  background-position: 50% 50%; }
