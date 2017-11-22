@@ -21,6 +21,19 @@ body {
   background-position: 50% 0;
   height: 4000px; }
 
+/* */
+.text1{
+font-size: 22px;
+font-family: "PTSansBold";
+color:#2f1b15;
+}  
+
+.text2{
+font-size: 22px;
+font-family: "PTSansBold";
+color:#000;
+}
+  
 .contact-info {
   padding: 39px 0 0 0;
   font-size: 22px;
@@ -37,11 +50,23 @@ body {
 
 .container2 {
   flex-wrap: wrap;
-  display: flex; }
+  display: flex; 
+  padding:27px  0 0 0;
+  }
 
+.about{
+padding:53px 0 0 0;
+}  
+  
 .about-checkbox {
-  /*padding:60px;*/ }
+width: 255px;
+line-height: 34px; }
 
+.about-textblock1{
+padding:5px;  
+}
+  
+  
 .contact-info__input {
   padding: 5px;
   width: 100%;
@@ -51,8 +76,9 @@ body {
 box-sizing: border-box;
 padding: 4px 6px 4px 24px;
 border: 0 0 2px 0;
-    border: 0px;
-    border-bottom: 2px solid #3f241e;
+    border: 0px;	
+    /*border-bottom: 2px solid #3f241e;*/
+	border-bottom: 2px solid #2f1b15;
 	font-family: "Courier New", Courier;
 	font-size:28px;
 }  
