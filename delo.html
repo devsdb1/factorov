@@ -18,7 +18,10 @@
 
 
 <div class="width-keeper-top">
-	<div class="zapolneno">
+	<div class="zapolneno" id="secret" onclick="myFunction()">
+	В данный момент у страницы немного фиксирована ширина, <br>чтоб сделать её максимальной похоже на макет. 
+	<br>Для демонстрации резиновости нажмите на "СЕКРЕТНО",
+	<br>и пробуте менять размер окна браузера.
 		<div class="zapolneno__pick">
 		</div>
 	</div>
@@ -33,7 +36,7 @@
 
 	
 	<div class="contact-info"> 
-		<div class="contact-info__container">   <div class="contact-info__lable">Полное ФИО </div> <div class="contact-info__input"><input type="text"  name="" value="Ащеулов Вячеслав Сергеевич" /></div>  </div>
+			<div class="contact-info__container">   <div class="contact-info__lable">Полное ФИО </div> <div class="contact-info__input"><input type="text"  name="" value="Ащеулов Вячеслав Сергеевич" /></div>  </div>
 			<div class="contact-info__container">   <div class="contact-info__lable">Год рождения </div> <div class="contact-info__input"><input type="text"  name="" value="1987" /></div>  </div>
 			<div class="contact-info__container">   <div class="contact-info__lable">Место дительства</div> <div class="contact-info__input"><input type="text"  name="" value="Владивосток" /></div>  </div>
 			<div class="contact-info__container">   <div class="contact-info__lable">Скайп</div> <div class="contact-info__input"><input type="text"  name="" value="" /></div>  </div>
@@ -42,10 +45,12 @@
 	</div>
 	 
 	<div class="about"> 
-		<div class="container2">   
+	<div class="text1">Расскажите о себе чекбоксами</div>
+	<div class="about-textblock1 ">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</div>
+		<div class="container2 text2">   
 			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" checked>БЭМ/OOCSS</label> </div>  
 			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" >Pug (Jade)</label> </div> 
-			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" checked>Stylus/LESS/SASS</label> </div> 
+			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" >Stylus/LESS/SASS</label> </div> 
 			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" >Работаю с SVG</label> </div> 			
 			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" checked>Верстаю семантично</label> </div>  
 			<div class="about-checkbox"><label><input type="checkbox" name="a" value="1680" >Accessability (A11Y)</label> </div> 
@@ -75,6 +80,23 @@
 	  
 	<div class="date"> 
 	</div>
+  
+<script>
+function myFunction() {
+	console.log("clicked1");
+	var myElement = document.getElementsByClassName("width-keeper"); //The getElementsByClassName() method returns a collection of all elements in the document
+	if (myElement){
+		//console.log('Элемент существует');
+		if(myElement[0].style.maxWidth=='1300px'){
+		myElement[0].style.maxWidth = '770px';}
+		else{
+		myElement[0].style.maxWidth = '1300px';
+		}
+	}
+	//else console.log('Такого элемента нету');
+	
+}
+</script>  
   
 </div>  
 </body>
