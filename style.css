@@ -16,10 +16,13 @@
 body {
   font-family: "PTSansBold";
   font-size: 15px;
-  /* временно ставим нашу картинку на фон чтоб видеть на сколько мы близки к ней */
+  /* временно ставим нашу картинку на фон чтоб видеть на сколько мы близки к ней
   background-image: url(./anketa.jpg);
   background-position: 50% 0;
-  height: 4000px; }
+  height: 4000px; */
+  background-image: url(./fon.jpg);
+  
+  }
 
 /* */
 .text1{
